@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Script</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        background-color: black;
+        position: relative;
+        height: 100vh;
+      }
+      h1 {
+        text-align: center;
+      }
+      span {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        background-color: orange;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+      }
+      span:hover {
+        background-color: orangered;
+        transition: ease 400ms;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>First exercise in JavaScript</h1>
+    <span onclick="clicked()"></span>
+    <script>
+      function clicked() {
+        window.alert("First message");
+        window.confirm("Are you enjoying it?");
+        window.prompt("What's your name?");
+      }
+    </script>
+  </body>
+</html>
